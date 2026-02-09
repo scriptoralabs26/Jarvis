@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JARVIS - Voice AI Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <div>
+        <h1>JARVIS</h1>
+        <p class="subtitle">Browser-based Voice AI Assistant</p>
+      </div>
+      <button id="themeToggle" class="icon-btn" title="Toggle theme" aria-label="Toggle theme">
+        🌙
+      </button>
+    </header>
+
+    <section class="status" aria-live="polite">
+      <span id="statusText">Ready to listen.</span>
+    </section>
+
+    <section id="chat" class="chat" aria-live="polite"></section>
+
+    <section class="controls">
+      <button id="micButton" class="mic-btn" aria-label="Start voice recognition">
+        <span class="mic-icon">🎙️</span>
+        <span>Tap to Speak</span>
+      </button>
+      <div class="helper">
+        <p>Try: <strong>"YouTube chalao"</strong>, <strong>"ChatGPT chalao"</strong>, or <strong>"search latest space news"</strong>.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
